@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+      <title>d:rev</title> 
+      <meta name="description" content="" />
+      <link rel="canonical" href="https://www.drev.io" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    
+    <!-- Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/egm0lqu.css">
+    
+    <style>
+      body {
+        font-family: neue-haas-grotesk-text, sans-serif;
+      }
+      h1, h2, h3, h4 {
+        font-family: neue-haas-grotesk-text, sans-serif;
+      }
+      .serif {
+        font-family: adobe-garamond-pro, serif;
+      }
+      body {
+        color: #fff;
+        background-color: #000;
+      }
+      ul li {
+        list-style-type: ": ";
+      }
+      a, dd a {
+        color: #000;
+        text-decoration: underline;
+        text-decoration-color: rgba(0, 0, 0, 0.0);
+        transition: .2s all cubic-bezier(.455,.03,.515,.955);
+      }
+      a:hover, dd a:hover {
+        color: #666;
+        text-decoration: underline;
+        text-decoration-color: #666;
+
+      }
+      .container {        
+        background-image: url("");
+        background-origin: content-box;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: 38%;
+      }
+      .container-narrow {
+        max-width: 540px;
+      }
+    </style>
+    
+  </head>
+  <body>
+
+      {{ content }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
+  </body>
+</html>
